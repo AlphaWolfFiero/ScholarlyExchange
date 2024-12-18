@@ -1,0 +1,48 @@
+/* Prevent overflow behind the sidebar */
+.main-content {
+    margin-left: 250px; /* Adjust to match your sidebar width */
+    padding: 20px;
+    overflow: hidden; /* Ensure children don't overflow */
+    box-sizing: border-box;
+}
+
+.post-detail {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Ensure each answer and reply is styled properly */
+.answer, .reply {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa; /* Light background for answers */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.answer .reply {
+    margin-top: 10px;
+    margin-left: 20px; /* Indent replies to show hierarchy */
+    background-color: #ffffff; /* Different background for replies */
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.answer .delete-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.answer .reply-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}

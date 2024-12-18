@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url('https://th.bing.com/th/id/OIP.8xGBAhpIRUNZ4JIWfHQjKAHaF7?w=201&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1.logo {
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 40px;
+    width: 400px; /* Adjusted to give more space for dropdowns */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.login-box p {
+    color: #b8b8b8;
+    font-size: 14px;
+}
+
+/* Login Form */
+.login-form {
+    text-align: left;
+}
+
+.login-form label {
+    color: #b8b8b8;
+    font-size: 14px;
+    display: block;
+    margin-top: 15px;
+}
+
+.login-form input,
+.login-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+}
+
+.login-form input::placeholder {
+    color: #888;
+}
+
+.login-form select {
+    appearance: none; /* Remove default arrow styling */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+.login-form select option {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.login-form select:focus {
+    outline: none;
+    border-color: #0091ff; /* Border color when focused */
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0091ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background-color: #000000;
+}
+
+/* Footer */
+footer {
+    color: #b8b8b8;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+.footer-links a {
+    color: #b8b8b8;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Apply to all buttons within .menu to ensure they are consistent */
+.header .menu button, .header .menu a.btn {
+    background-color: #007BFF; /* Blue color for all buttons */
+    color: white;
+    border: none;
+    padding: 12px 18px; /* Add more padding for better visual appeal */
+    font-size: 16px;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.header .menu button:hover, .header .menu a.btn:hover {
+    background-color: #0056b3; /* Darker blue when hovered */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.header .menu button.delete, .header .menu a.btn.delete {
+    background-color: #DC3545; /* Red background for delete button */
+    box-shadow: 0 4px 6px rgba(220, 53, 69, 0.3); /* Lighter shadow for delete button */
+}
+
+.header .menu button.delete:hover, .header .menu a.btn.delete:hover {
+    background-color: #a71d2a; /* Darker red when hovered */
+    transform: translateY(-2px); /* Lift effect for delete button */
+}
